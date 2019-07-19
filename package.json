@@ -4,22 +4,23 @@
   "description": "Use Lighthouse bot to set a performance budget.",
   "scripts": {
     "start": "webpack && http-server -c-1",
-    "lh": "lighthouse-ci"
+    "lh": "lighthousebot"
   },
   "dependencies": {
     "lodash": "^4.7.0",
     "firebase-tools": "^6.0.1"
   },
   "devDependencies": {
-    "http-server": "^0.11.1",
-    "style-loader": "^0.16.1",
     "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "lighthouse-ci": "git+https://github.com/ebidel/lighthouse-ci.git",
+    "lighthousebot": "git+https://github.com/ebidel/lighthousebot.git",
+    "style-loader": "^0.16.1",
     "webpack": "^4.16.4",
     "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.5",
-    "html-webpack-plugin": "^3.2.0",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "lighthouse-ci": "git+https://github.com/ebidel/lighthouse-ci.git"
+    "webpack-dev-server": "^3.1.5"
   },
   "engines": {
     "node": "8.1.x"
