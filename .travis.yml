@@ -9,4 +9,4 @@ script:
  - webpack
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN --non-interactive
-  - npm run lh -- --perf=100 https://lighthouse-poc.web.app/
+  - npm run lh --perf=99 https://lighthouse-poc.web.app/
